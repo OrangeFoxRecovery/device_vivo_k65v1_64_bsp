@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/garden
+DEVICE_PATH := device/vivo/k65v1_64_bsp
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -76,8 +76,7 @@ BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_SIZE := 9126805504
 BOARD_MAIN_PARTITION_LIST := \
 	system \
-	vendor \
-	product
+	vendor
 
 # System as Root
 BOARD_SUPPRESS_SECURE_ERASE := true
@@ -116,8 +115,3 @@ TW_MAX_BRIGHTNESS := 2047
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
-
-# MIUI V12.5 Android 11 Decryption Support
-BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
-	--prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
-	--prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)

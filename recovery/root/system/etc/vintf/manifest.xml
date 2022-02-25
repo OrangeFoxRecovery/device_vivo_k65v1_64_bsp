@@ -1,6 +1,7 @@
 <!--
     Input:
         manifest.xml
+        framework_compatibility_matrix.xml
 -->
 <manifest version="1.0" type="framework">
     <hal format="hidl">
@@ -87,6 +88,96 @@
         <name>netutils-wrapper</name>
         <transport></transport>
         <version>1.0</version>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.factory.hardware.vivoatcmd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVivoAtcmd</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IVivoAtcmd/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.camera.cameralog</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraLogSystem</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICameraLogSystem/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVivoCameraProvider</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IVivoCameraProvider/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.camera.vop</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraVOP</name>
+            <instance>default/0</instance>
+        </interface>
+        <fqname>@1.0::ICameraVOP/default/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.camera3rd.provider</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICamera3rdProvider</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICamera3rdProvider/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.nativecamera.provider</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INativeCameraProvider</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::INativeCameraProvider/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.osccamera.provider</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOscCameraProvider</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IOscCameraProvider/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.wifi.keystore</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IKeystoreExt</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IKeystoreExt/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.vivo.hardware.wifi.wifivendorsta</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVivoWifiVendorStaIface</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IVivoWifiVendorStaIface/default</fqname>
     </hal>
     <vendor-ndk>
         <version>29</version>

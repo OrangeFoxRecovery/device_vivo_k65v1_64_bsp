@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="garden"
+FDEVICE="k65v1_64_bsp"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -43,9 +43,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
-
-	# Alternate Codenames
-	export TARGET_DEVICE_ALT="dandelion,angelica,angelican,angelicain,cattail"
 
 	export OF_USE_GREEN_LED=0
 	export OF_HIDE_NOTCH=1

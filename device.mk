@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/garden
+LOCAL_PATH := device/vivo/k65v1_64_bsp
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_garden.mk
+    $(LOCAL_DIR)/twrp_k65v1_64_bsp.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_garden-eng
+    twrp_k65v1_64_bsp-eng

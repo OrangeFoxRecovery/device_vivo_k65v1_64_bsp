@@ -14,6 +14,7 @@
 /dev/block/platform/bootdevice/by-name/logo      0660    root    system
 /dev/block/platform/bootdevice/by-name/frp       0660    root    system
 /dev/block/platform/bootdevice/by-name/md1img    0640    root    system
+/dev/block/platform/bootdevice/by-name/md1img_1  0640    root    system
 /dev/block/platform/bootdevice/by-name/md1img_a  0640    root    system
 /dev/block/platform/bootdevice/by-name/md1img_b  0640    root    system
 /dev/block/platform/bootdevice/by-name/md1dsp    0660    root    system
@@ -42,12 +43,13 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-/dev/fm                   0660   media     media
+/dev/fm                   0666   media     media
 
 # NFC
 /dev/msr3110              0666   root       root
 /dev/mt6605               0660   nfc        radio
 /dev/st21nfc              0660   nfc        radio
+/dev/nq-nci               0660   nfc        nfc
 
 # MTK BTIF driver
 /dev/btif                 0600   system     system
